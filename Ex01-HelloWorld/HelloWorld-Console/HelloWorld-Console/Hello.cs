@@ -13,7 +13,7 @@ namespace HelloWorld_Console
             System.Console.WriteLine("Hello, World!");
 
 #if DEBUG
-    Console.WriteLine("Press enter to close...");
+    Console.WriteLine("\nPress enter to close...");
     Console.ReadLine();
 #endif
 
