@@ -10,26 +10,48 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            int parm1, parm2;
-            float result = 0;
+            double num1, num2, result = 0;
             Char op = ' ';
 
-            // Get parm values & operator
-            Console.WriteLine("Enter first parameter:");
-            parm1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nEnter second parameter:");
-            parm2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nEnter operator:");
-            op = Convert.ToChar(Console.ReadLine());
-
-
-            // Perform calculation & output result
-            switch(op)
+            while (1 == 1)
             {
-                case '+':
-                    result = parm1 + parm2;
-                    Console.WriteLine("\n{0} + {1} = {2}", parm1, parm2, result);
-                    break;
+                // Get parm values & operator
+                Console.WriteLine("\n\nEnter first number:");
+                num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("\nEnter second number:");
+                num2 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("\nEnter operator (+, -, *, or /) :");
+                op = Convert.ToChar(Console.ReadLine());
+
+
+                // Perform calculation & output result
+                switch (op)
+                {
+                    case '+':
+                        result = num1 + num2;
+                        Console.WriteLine("\n{0} {1} {2} = {3}", num1, op, num2, result);
+                        break;
+
+                    case '-':
+                        result = num1 - num2;
+                        Console.WriteLine("\n{0} {1} {2} = {3}", num1, op, num2, result);
+                        break;
+
+                    case '*':
+                        result = num1 * num2;
+                        Console.WriteLine("\n{0} {1} {2} = {3}", num1, op, num2, result);
+                        break;
+
+                    case '/':
+                        result = num1 / num2;
+                        Console.WriteLine("\n{0} {1} {2} = {3}", num1, op, num2, result);
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid operator entered!!!");
+                        break;
+                }
+
             }
 
 
