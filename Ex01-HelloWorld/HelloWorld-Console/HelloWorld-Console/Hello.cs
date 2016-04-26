@@ -12,10 +12,10 @@ namespace HelloWorld_Console
         {
             System.Console.WriteLine("Hello, World!");
 
-#if DEBUG
-    Console.WriteLine("\nPress enter to close...");
-    Console.ReadLine();
-#endif
+            #if DEBUG
+                Console.WriteLine("\nPress enter to close...");
+                Console.ReadLine();
+            #endif
 
         }
     }
