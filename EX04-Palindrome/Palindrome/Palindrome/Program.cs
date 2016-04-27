@@ -31,7 +31,7 @@ namespace Palindrome
                     reverseText = new string(charAr);
 
                     // Validate and output findings
-                    if (strippedText.Equals(reverseText))
+                    if (strippedText.Equals(reverseText, StringComparison.OrdinalIgnoreCase))
                     {
                         Console.WriteLine("\n{0} is a palindrome!", text);
                     }
